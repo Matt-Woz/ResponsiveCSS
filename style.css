@@ -99,6 +99,9 @@ h2{
     li a{
         margin: auto;
     }
+    div.flex-container-desktop-text{
+        display:none;
+    }
 }
 
 
@@ -142,12 +145,19 @@ h2{
         margin: auto;
 
     }
+    div.flex-container-desktop-text{
+        display:none;
+    }
 }
 
 /* Media query for laptop: */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    .flex-container-laptop{
+    .flex-container-large{
         display: flex;
+        align-items: center;
+    }
+    .flex-container-laptop-text{
+        display:flex;
         align-items: center;
     }
     div.icon{
@@ -174,9 +184,67 @@ h2{
     div#facts{
         flex-basis: 50%;
     }
+    div.flex-container-desktop-text{
+        display:none;
+    }
+}
+/* Media query for desktop: */
+@media only screen and (min-width: 1440px) {
+    .flex-container-large{
+        display: flex;
+        align-items: center;
+    }
+    .flex-container-laptop-text{
+        display: none;
+    }
+    div#news{
+        display: none;
+    }
+    .flex-container-desktop-text{
+        display: flex;
+        justify-items: baseline;
+    }
+
+    div.icon{
+        display:none;
+    }
+    div#header{
+        flex-basis: auto;
+        width:70%;
+    }
+    div.icon2{
+        flex-basis: auto;
+        margin-left: 175px;
+    }
+    div#menu-bar{
+        width:75%;
+    }
+    li{
+        font-size: 15px;
+        width:20%;
+        text-align: center;
+        margin:auto;
+    }
+    li a{
+        margin: auto;
+    }
+    div#campus2{
+        flex-basis: 40%;
+    }
+    div#facts2{
+        flex-basis: 40%;
+    }
+    div#news2{
+        flex-basis: 20%;
+        align-self: flex-end;
+    }
+    .border2{
+        border-style: solid;
+        margin: -30px 10px 10px;
+        padding: 5px 20px 40px 20px;
+
+    }
+
 
 
 }
-
-
-/* Media query for desktop: */

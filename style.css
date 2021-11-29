@@ -83,6 +83,9 @@ h2{
         width: 15%;
         float: none;
     }
+    div.icon2{
+        display:none;
+    }
     div#menu-bar
     {
         padding-right: 0;
@@ -118,6 +121,9 @@ h2{
         margin-top: 10px;
         padding-right:15px;
         flex-basis:150px;
+    }
+    div.icon2{
+        display:none;
     }
     div#menu-bar{
         padding-top: 20px;

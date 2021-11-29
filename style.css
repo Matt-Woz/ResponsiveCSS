@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;"
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DF4A2A;
+    width:100%;
+}
+
+li {
+    float: left;
+}
+li a:focus, li a:hover{
+    background: darkgrey;
+    font-weight: bold
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+    margin: 0 20px;
+}
+
+input {
+    outline: none;
+}
+
+/* Clears, forcing a new row */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* This adds a gutter to the grid */
+[class*="col-"] {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+.border{
+    border-style: solid;
+    margin:10px;
+    padding: 0 20px 10px 20px;
+}
+
+h2{
+    text-align: center;
+}
+[class*="col-"]{width: 100%;}
+
+
+
+
+/* Media query for mobile: */
+@media only screen and (max-width: 426px) {
+    [class*="col-"]{width: 100%;}
+    div#header{display:none;}
+    div.icon{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        float: none;
+    }
+    div#menu-bar
+    {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    li{
+        font-size: 10px;
+        margin-left: 7px;
+    }
+    li a{
+        margin: auto;
+    }
+}
+
+
+
+/* Media query for tablet: */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    div#header{display:none;}
+    img.aerial{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: 30%;
+    }
+    div.icon{
+        margin-top: 10px;
+    }
+    div#menu-bar{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+    li{
+        font-size: 15px;
+        width:20%;
+        text-align: center;
+        margin:auto;
+    }
+    li a{
+        margin: auto;
+
+    }
+}
+
+/* Media query for laptop: */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    img.icon{
+        display: block;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        margin-left: 200px;
+        margin-top: 50px;
+        height: 119px;
+
+    }
+    div#header
+    {
+        width: 60%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+}
+
+
+/* Media query for desktop: */

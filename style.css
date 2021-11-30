@@ -5,6 +5,10 @@
 img {
     max-width: 100%;
     height: auto;"
+    display: block;
+}
+body{
+    font-size: 20px;
 }
 
 html {
@@ -49,18 +53,6 @@ input {
     display: block;
 }
 
-/* This adds a gutter to the grid
-[class*="col-"] {
-    float: left;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
- */
-
-
-
-
 .border{
     border-style: solid;
     margin:10px;
@@ -72,7 +64,36 @@ h2{
 }
 
 
+@media only screen and (max-width: 425px) {
+    .flex-container-desktop-text{
+        display: none;
+    }
+    .flex-container-large{
+        display: none;
+    }
+    div.icon{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:15%;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+    }
 
+
+}
 /* Media query for mobile: */
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     div#header{display:none;}
@@ -92,9 +113,12 @@ h2{
         padding-left: 0;
         padding-top: 10px;
     }
+
     li{
         font-size: 10px;
-        margin-left: 7px;
+        width:20%;
+        text-align: center;
+        margin:auto;
     }
     li a{
         margin: auto;
@@ -108,6 +132,7 @@ h2{
 
 /* Media query for tablet: */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
     .flex-container {
         display: flex;
         align-items: center;
@@ -130,7 +155,6 @@ h2{
     }
     div#menu-bar{
         padding-top: 20px;
-        padding-bottom: 20px;
         padding-left: 0;
         flex-basis: auto;
         width: 100%;
@@ -145,13 +169,25 @@ h2{
         margin: auto;
 
     }
+    .flex-container-large{
+        display: none
+    }
     div.flex-container-desktop-text{
         display:none;
     }
 }
 
 /* Media query for laptop: */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    div#menu-bar{
+        padding: 0;
+    }
+    .flex-container {
+        display: block;
+        align-items: flex-start;
+    }
+    div#header{display:flex;}
+
     .flex-container-large{
         display: flex;
         align-items: center;
@@ -164,6 +200,7 @@ h2{
         display:none;
     }
     div.icon2{
+        display: flex;
         flex-basis: auto;
     }
     div#header{
@@ -184,7 +221,7 @@ h2{
     div#facts{
         flex-basis: 50%;
     }
-    div.flex-container-desktop-text{
+    .flex-container-desktop-text{
         display:none;
     }
 }
@@ -229,22 +266,20 @@ h2{
         margin: auto;
     }
     div#campus2{
-        flex-basis: 40%;
+        flex-basis: 42%;
     }
     div#facts2{
-        flex-basis: 40%;
+        flex-basis: 42%;
     }
     div#news2{
-        flex-basis: 20%;
+        flex-basis: 16%;
         align-self: flex-end;
+        margin-top: -60px;
     }
     .border2{
         border-style: solid;
-        margin: -40px 10px 10px;
-        padding: 5px 20px 40px 20px;
+        margin: 0 10px 10px;
+        padding: 0 20px 40px 20px;
 
     }
-
-
-
 }
